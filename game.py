@@ -27,3 +27,15 @@ while True:
     else:
         print("Please enter a number")
         continue
+
+    if user_guess==random_number:
+        print("You got it!")
+        break
+    elif user_guess<random_number:
+        print("""Your guess was lower than the number.
+         Try Again!""")
+    else:
+        print("""Your guess was higher than the number.
+         Try Again!""")
+
+print("You got it in", guess, "guesses!")
